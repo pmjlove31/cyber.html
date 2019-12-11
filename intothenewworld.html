@@ -1,0 +1,710 @@
+<!doctype html>
+ <html>
+ <head>
+   <meta charset="utf-8">
+   <title>CyberWorld</title>
+   <style>
+
+ body, html {
+   height: 100%;
+   margin: 0;
+ }
+
+ * {
+   box-sizing: border-box;
+ }
+
+ body {
+   margin: 0;
+   font-family: Arial;
+   font-size: 17px;
+ }
+
+
+ #myVideo {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
+   z-index:0
+ }
+
+ .content {
+   position: fixed;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.5);
+   color: #f1f1f1;
+   width: 100%;
+   padding: 20px;
+ }
+
+
+ #myBtn {
+   width: 200px;
+   font-size: 18px;
+   padding: 10px;
+   border: none;
+   background: #000;
+   color: #fff;
+   cursor: pointer;
+ }
+
+ #myBtn:hover {
+   background: #ddd;
+   color: black;
+ }
+
+
+#door1
+{ content:url(door-01.png);
+  position:absolute;top50px;z-index:10;
+  background-image:none;
+  display: inline-block;
+  width:150px;
+  padding : 20px;
+  }
+
+  #door2
+  {content:url(door2-01.png);
+    position:absolute;top50px; z-index:12;
+    background-image:none;
+left: 100px;
+    display: inline-block;
+    width:150px;
+    padding : 20px;
+    }
+
+      #door3
+      {content:url(door-01.png);
+        position:absolute;top50px; z-index:12;
+        background-image:none;
+    left: 200px;
+        display: inline-block;
+        width:150px;
+        padding : 20px;
+        }
+
+        #door4
+        {content:url(door-01.png);
+          position:absolute;top50px; z-index:12;
+          background-image:none;
+      left: 300px;
+      top:500px
+          display: inline-block;
+          width:150px;
+          padding : 20px;
+          }
+          #door5
+          {content:url(door-01.png);
+            position:absolute;top50px; z-index:12;
+            background-image:none;
+        left: 400px;
+            display: inline-block;
+            width:150px;
+            padding : 20px;
+            }
+            #door6
+            {content:url(door2-01.png);
+              position:absolute;top50px; z-index:12;
+              background-image:none;
+          left:500px;
+              display: inline-block;
+              width:150px;
+              padding : 20px;
+              }
+              #door7
+              {content:url(door-01.png);
+                position:absolute;top50px; z-index:12;
+                background-image:none;
+              left:600px;
+                display: inline-block;
+                width:150px;
+                padding : 20px;
+                }
+                #door8
+                {content:url(door-01.png);
+                  position:absolute;top50px; z-index:12;
+                  background-image:none;
+                left:700px;
+                  display: inline-block;
+                  width:150px;
+                  padding : 20px;
+                  }
+                  #door9
+                  {content:url(door-01.png);
+                    position:absolute;top50px; z-index:12;
+                    background-image:none;
+                  left:800px;
+                    display: inline-block;
+                    width:150px;
+                    padding : 20px;
+                    }
+                    #door10
+                    {content:url(door2-01.png);
+                      position:absolute;top50px; z-index:12;
+                      background-image:none;
+                    left:900px;
+                      display: inline-block;
+                      width:150px;
+                      padding : 20px;
+                      }
+                      #door11
+                      {content:url(door-01.png);
+                        position:absolute;top50px; z-index:12;
+                        background-image:none;
+                      left:400px;
+                      top:300px;
+                        display: inline-block;
+                        width:150px;
+                        padding : 20px;
+                        }
+                        #door12
+                        {content:url(door2-01.png);
+                          position:absolute;top50px; z-index:12;
+                          background-image:none;
+                      left: 100px;
+                      top:150px;
+                          display: inline-block;
+                          width:150px;
+                          padding : 20px;
+                          }
+                          #door13
+                          {content:url(door2-01.png);
+                            position:absolute;top50px; z-index:12;
+                            background-image:none;
+                        left: 0px;
+                        top:150px;
+                            display: inline-block;
+                            width:150px;
+                            padding : 20px;
+                            }
+                            #door14
+                            {content:url(door2-01.png);
+                              position:absolute;top50px; z-index:12;
+                              background-image:none;
+                          left:200px;
+                          top:150px;
+                              display: inline-block;
+                              width:150px;
+                              padding : 20px;
+                              }
+                              #door15
+                              {content:url(door2-01.png);
+                                position:absolute;top50px; z-index:12;
+                                background-image:none;
+                            left:300px;
+                            top:150px;
+                                display: inline-block;
+                                width:150px;
+                                padding : 20px;
+                                }
+                                #door16
+                                {content:url(door2-01.png);
+                                  position:absolute;top50px; z-index:12;
+                                  background-image:none;
+                              left:400px;
+                              top:150px;
+                                  display: inline-block;
+                                  width:150px;
+                                  padding : 20px;
+                                  }
+                                  #door17
+                                  {content:url(door2-01.png);
+                                    position:absolute;top50px; z-index:12;
+                                    background-image:none;
+                                left:500px;
+                                top:150px;
+                                    display: inline-block;
+                                    width:150px;
+                                    padding : 20px;
+                                    }
+                                    #door17
+                                    {content:url(door2-01.png);
+                                      position:absolute;top50px; z-index:12;
+                                      background-image:none;
+                                  left:1000px;
+
+                                      display: inline-block;
+                                      width:150px;
+                                      padding : 20px;
+                                      }
+                                      #door18
+                                      {content:url(door2-01.png);
+                                        position:absolute;top50px; z-index:12;
+                                        background-image:none;
+                                    left:1100px;
+
+                                        display: inline-block;
+                                        width:150px;
+                                        padding : 20px;
+                                        }
+                                        #door19
+                                        {content:url(door2-01.png);
+                                          position:absolute;top50px; z-index:12;
+                                          background-image:none;
+                                      left:1200px;
+
+                                          display: inline-block;
+                                          width:150px;
+                                          padding : 20px;
+                                          }
+                                          #door20
+                                          {content:url(door2-01.png);
+                                            position:absolute;top50px; z-index:12;
+                                            background-image:none;
+                                        left:1500px;
+
+                                            display: inline-block;
+                                            width:150px;
+                                            padding : 20px;
+                                            }
+
+                                            #
+                                            {content:url(door2-01.png);
+                                              position:absolute;top50px; z-index:12;
+                                              background-image:none;
+                                          left:1400px;
+
+                                              display: inline-block;
+                                              width:150px;
+                                              padding : 20px;
+                                              }
+                                              #door23
+                                              {content:url(door2-01.png);
+                                                position:absolute;top50px; z-index:12;
+                                                background-image:none;
+                                            left:1500px;
+                                            top:300px;
+
+                                                display: inline-block;
+                                                width:150px;
+                                                padding : 20px;
+                                                }
+
+                                                #
+                                                {content:url(door2-01.png);
+                                                  position:absolute;top50px; z-index:12;
+                                                  background-image:none;
+                                              left:1400px;
+
+                                                  display: inline-block;
+                                                  width:150px;
+                                                  padding : 20px;
+                                                  }
+
+                                                #door22
+                                                {content:url(door-01.png);
+                                                  position:absolute;top50px; z-index:12;
+                                                  background-image:none;
+                                              left: 1200px;
+                                              top:550px;
+                                                  display: inline-block;
+                                                  width:400px;
+                                                  padding : 20px;
+                                                  }
+
+                                                  #door23
+                                                  {content:url(door-01.png);
+                                                    position:absolute;top50px; z-index:12;
+                                                    background-image:none;
+                                                   left: 1000px;
+                                                   top:0px;
+                                                    display: inline-block;
+                                                    width:150px;
+                                                    padding : 20px;
+                                                    }
+                                                    #door24
+                                                    {content:url(door-01.png);
+                                                      position:absolute;top50px; z-index:12;
+                                                      background-image:none;
+                                                     left: 1300px;
+                                                     top:0px;
+                                                      display: inline-block;
+                                                      width:150px;
+                                                      padding : 20px;
+                                                      }
+                                                      #door25
+                                                      {content:url(door2-01.png);
+                                                        position:absolute;top50px; z-index:12;
+                                                        background-image:none;
+                                                       left: 1400px;
+                                                       top:0px;
+                                                        display: inline-block;
+                                                        width:150px;
+                                                        padding : 20px;
+                                                        }
+
+
+                                                        #door26
+                                                        {content:url(door2-01.png);
+                                                          position:absolute;top50px; z-index:12;
+                                                          background-image:none;
+                                                         left: 1300px;
+                                                         top:150px;
+                                                          display: inline-block;
+                                                          width:150px;
+                                                          padding : 20px;
+                                                          }
+                                                          #door27
+                                                          {content:url(door-01.png);
+                                                            position:absolute;top50px; z-index:12;
+                                                            background-image:none;
+                                                           left: 500px;
+                                                           top:150px;
+                                                            display: inline-block;
+                                                            width:150px;
+                                                            padding : 20px;
+                                                            }
+                                                            #door28
+                                                            {content:url(door-01.png);
+                                                              position:absolute;top50px; z-index:12;
+                                                              background-image:none;
+                                                             left: 600px;
+                                                             top:150px;
+                                                              display: inline-block;
+                                                              width:150px;
+                                                              padding : 20px;
+                                                              }
+                                                              #door29
+                                                              {content:url(door-01.png);
+                                                                position:absolute;top50px; z-index:12;
+                                                                background-image:none;
+                                                               left: 700px;
+                                                               top:150px;
+                                                                display: inline-block;
+                                                                width:150px;
+                                                                padding : 20px;
+                                                                }
+                                                                #door30
+                                                                {content:url(door-01.png);
+                                                                  position:absolute;top50px; z-index:12;
+                                                                  background-image:none;
+                                                                 left: 800px;
+                                                                 top:150px;
+                                                                  display: inline-block;
+                                                                  width:150px;
+                                                                  padding : 20px;
+                                                                  }
+                                                                  #door31
+                                                                  {content:url(door-01.png);
+                                                                    position:absolute;top50px; z-index:12;
+                                                                    background-image:none;
+                                                                   left: 900px;
+                                                                   top:150px;
+                                                                    display: inline-block;
+                                                                    width:150px;
+                                                                    padding : 20px;
+                                                                    }
+                                                                    #door32
+                                                                    {content:url(door-01.png);
+                                                                      position:absolute;top50px; z-index:12;
+                                                                      background-image:none;
+                                                                     left: 1100px;
+                                                                     top:150px;
+                                                                      display: inline-block;
+                                                                      width:150px;
+                                                                      padding : 20px;
+                                                                      }
+                                                                      #door33
+                                                                      {content:url(door2-01.png);
+                                                                        position:absolute;top50px; z-index:12;
+                                                                        background-image:none;
+                                                                       left: 1200px;
+                                                                       top:150px;
+                                                                        display: inline-block;
+                                                                        width:150px;
+                                                                        padding : 20px;
+                                                                        }
+                                                                        #door34
+                                                                        {content:url(door-01.png);
+                                                                          position:absolute;top50px; z-index:12;
+                                                                          background-image:none;
+                                                                         left: 1400px;
+                                                                         top:150px;
+                                                                          display: inline-block;
+                                                                          width:150px;
+                                                                          padding : 20px;
+                                                                          }
+                                                                          #door35
+                                                                          {content:url(door-01.png);
+                                                                            position:absolute;top50px; z-index:12;
+                                                                            background-image:none;
+                                                                           left: 1500px;
+                                                                           top:150px;
+                                                                            display: inline-block;
+                                                                            width:150px;
+                                                                            padding : 20px;
+                                                                            }
+                                                                            #door36
+                                                                            {content:url(door-01.png);
+                                                                              position:absolute;top50px; z-index:12;
+                                                                              background-image:none;
+                                                                             left: 0px;
+                                                                             top:300px;
+                                                                              display: inline-block;
+                                                                              width:150px;
+                                                                              padding : 20px;
+                                                                              }
+                                                                              #door37
+                                                                              {content:url(door2-01.png);
+                                                                                position:absolute;top50px; z-index:12;
+                                                                                background-image:none;
+                                                                               left: 100px;
+                                                                               top:300px;
+                                                                                display: inline-block;
+                                                                                width:150px;
+                                                                                padding : 20px;
+                                                                                }
+                                                                                #door38
+                                                                                {content:url(door2-01.png);
+                                                                                  position:absolute;top50px; z-index:12;
+                                                                                  background-image:none;
+                                                                                 left: 200px;
+                                                                                 top:300px;
+                                                                                  display: inline-block;
+                                                                                  width:150px;
+                                                                                  padding : 20px;
+                                                                                  }
+
+                                                                                  #door39
+                                                                                  {content:url(door-01.png);
+                                                                                    position:absolute;top50px; z-index:12;
+                                                                                    background-image:none;
+                                                                                   left: 300px;
+                                                                                   top:300px;
+                                                                                    display: inline-block;
+                                                                                    width:150px;
+                                                                                    padding : 20px;
+                                                                                    }
+
+                                                                                      #door41
+                                                                                      {content:url(door2-01.png);
+                                                                                        position:absolute;top50px; z-index:12;
+                                                                                        background-image:none;
+                                                                                       left: 500px;
+                                                                                       top:300px;
+                                                                                        display: inline-block;
+                                                                                        width:150px;
+                                                                                        padding : 20px;
+                                                                                        }
+                                                                                        #door42
+                                                                                        {content:url(door2-01.png);
+                                                                                          position:absolute;top50px; z-index:12;
+                                                                                          background-image:none;
+                                                                                         left: 600px;
+                                                                                         top:300px;
+                                                                                          display: inline-block;
+                                                                                          width:150px;
+                                                                                          padding : 20px;
+                                                                                          }
+                                                                                          #door43
+                                                                                          {content:url(door2-01.png);
+                                                                                            position:absolute;top50px; z-index:12;
+                                                                                            background-image:none;
+                                                                                           left: 700px;
+                                                                                           top:300px;
+                                                                                            display: inline-block;
+                                                                                            width:150px;
+                                                                                            padding : 20px;
+                                                                                            }
+                                                                                            #door44
+                                                                                            {content:url(door2-01.png);
+                                                                                              position:absolute;top50px; z-index:12;
+                                                                                              background-image:none;
+                                                                                             left: 800px;
+                                                                                             top:300px;
+                                                                                              display: inline-block;
+                                                                                              width:150px;
+                                                                                              padding : 20px;
+                                                                                              }
+                                                                                              #door45
+                                                                                              {content:url(door2-01.png);
+                                                                                                position:absolute;top50px; z-index:12;
+                                                                                                background-image:none;
+                                                                                               left: 900px;
+                                                                                               top:300px;
+                                                                                                display: inline-block;
+                                                                                                width:150px;
+                                                                                                padding : 20px;
+                                                                                                }
+                                                                                                #door46
+                                                                                                {content:url(door-01.png);
+                                                                                                  position:absolute;top50px; z-index:12;
+                                                                                                  background-image:none;
+                                                                                                 left: 1000px;
+                                                                                                 top:300px;
+                                                                                                  display: inline-block;
+                                                                                                  width:150px;
+                                                                                                  padding : 20px;
+                                                                                                  }
+                                                                                                  #door47
+                                                                                                  {content:url(door-01.png);
+                                                                                                    position:absolute;top50px; z-index:12;
+                                                                                                    background-image:none;
+                                                                                                   left: 1000px;
+                                                                                                   top:300px;
+                                                                                                    display: inline-block;
+                                                                                                    width:150px;
+                                                                                                    padding : 20px;
+                                                                                                    }
+                                                                                                    #door48
+                                                                                                    {content:url(door2-01.png);
+                                                                                                      position:absolute;top50px; z-index:12;
+                                                                                                      background-image:none;
+                                                                                                     left: 1100px;
+                                                                                                     top:300px;
+                                                                                                      display: inline-block;
+                                                                                                      width:150px;
+                                                                                                      padding : 20px;
+                                                                                                      }
+                                                                                                      #door49
+                                                                                                      {content:url(door2-01.png);
+                                                                                                        position:absolute;top50px; z-index:12;
+                                                                                                        background-image:none;
+                                                                                                       left: 1200px;
+                                                                                                       top:300px;
+                                                                                                        display: inline-block;
+                                                                                                        width:150px;
+                                                                                                        padding : 20px;
+                                                                                                        }
+                                                                                                        #door50
+                                                                                                        {content:url(door2-01.png);
+                                                                                                          position:absolute;top50px; z-index:12;
+                                                                                                          background-image:none;
+                                                                                                         left: 1300px;
+                                                                                                         top:300px;
+                                                                                                          display: inline-block;
+                                                                                                          width:150px;
+                                                                                                          padding : 20px;
+                                                                                                          }
+                                                                                                          #door51
+                                                                                                          {content:url(door2-01.png);
+                                                                                                            position:absolute;top50px; z-index:12;
+                                                                                                            background-image:none;
+                                                                                                           left: 1400px;
+                                                                                                           top:300px;
+                                                                                                            display: inline-block;
+                                                                                                            width:150px;
+                                                                                                            padding : 20px;
+                                                                                                            }
+                                                                                                            #door52
+                                                                                                            {content:url(door-01.png);
+                                                                                                              position:absolute;top50px; z-index:12;
+                                                                                                              background-image:none;
+                                                                                                             left: 1500px;
+                                                                                                             top:300px;
+                                                                                                              display: inline-block;
+                                                                                                              width:150px;
+                                                                                                              padding : 20px;
+                                                                                                              }
+                                                                                                              #vid
+                                                                                                              {content:url(door-01.png);
+                                                                                                                position:absolute;top50px; z-index:12;
+                                                                                                                background-image:none;
+                                                                                                               left: 1500px;
+                                                                                                               top:300px;
+                                                                                                                display: inline-block;
+                                                                                                                width:150px;
+                                                                                                                padding : 20px;
+                                                                                                                }
+
+<div id ="popup">
+<div id= "popmenu">
+
+
+</style>
+<body>
+  <video autoplay loop muted id="myVideo">
+    <source src="Comp 1.mp4" type="video/mp4">
+  </video>
+  <a href="first.html"><div id=door1> </div> </a>
+
+
+<div id=door2>  </div>
+    <a href="second.html">
+    <div id=door3> </div></a>
+      <a href="third.html">
+    <div id=door4> </div></a>
+    <a href="forth.html">
+    <div id=door5> </div></a>
+    <div id=door6> </div>
+        <a href="sixth.html"><div id=door7> </div>
+        </a>
+  <a href="fifth.html">    <div id=door8> </div></A>
+        <a href="seventh.html"><div id=door9> </div></a>
+
+    <div id=door10> </div>
+
+    <div id=door11> </div>
+        <div id=door12> </div>
+          <div id=door13> </div>
+    <div id=door14> </div>
+    <div id=door15> </div>
+
+    <div id=door16> </div>
+    <div id=door17> </div>
+      <div id=door18> </div>
+        <div id=door19> </div>
+          <div id=door20> </div>
+
+    <a href="third.html">
+    <div id=door22> </div></a>
+<a href="https://pmjlove.github.io/index.html/"><div id=door22>  </div></a>
+
+<a href="eight.html">  <div id=door23> </div></a>
+
+  <a href="nine.html">  <div id=door24> </div></a>
+<div id=door25> </div>
+<div id=door26> </div>
+<a href="ten.html"><div id=door27> </div></a>
+<a href="eleven.html"><div id=door28> </div></a>
+<a href="twelve.html"><div id=door29> </div></a>
+<a href="thirteen.html"><div id=door30> </div></a>
+<a href="fourteen.html"> <div id=door31> </div></a>
+<div id=door32> </div>
+<div id=door33> </div>
+<a href="fifteen.html"><div id=door34> </div></a>
+<a href="sixteen.html"><div id=door35> </div></a>
+<a href="seventeen.html"><div id=door36> </div></a>
+<div id=door37> </div>
+<div id=door38> </div>
+<a href="eighteen.html"><div id=door39> </div></a>
+<a href="first.html"><div id=door41> </div></a>
+<div id=door42> </div>
+<div id=door43> </div>
+<div id=door44> </div>
+<div id=door45> </div>
+<a href="third.html"><div id=door47> </div> </a>
+
+<div id=door48> </div>
+<div id=door49> </div>
+<div id=door50> </div><div id=door51> </div>
+<a href="forth.html"><div id=door52> </div></a>
+
+
+
+
+
+
+<script>
+
+
+
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+
+
+  </script>
+
+</body>
+</html>
